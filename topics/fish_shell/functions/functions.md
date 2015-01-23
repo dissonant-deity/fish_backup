@@ -25,5 +25,10 @@ generted by the program:
 [output.md](output.md)
 
 
+==================
+
+### Update
+
+Added menu option to backup functions to tar gz archive
 
 

@@ -75,3 +75,30 @@ puts `cat output.md` + "\n\n"
 
 puts ("+" * 10) + "\n\n"
 puts "file was written (with the contents printed above this line)"
+
+puts "\n\n"
+
+loop do
+  puts "do you want to save your fish functions into a tar gz archive? fish_functions.tar.gz will be overwritten (y/n)"
+  case gets.chomp.downcase
+  when "y"
+    break
+  when "n"
+   puts "exiting"
+   exit
+  else
+   next
+  end
+end
+
+begin
+  `rm output.tar.gz`
+rescue StandardError
+  puts "this error is safe to ignore"
+  true
+end
+
+`tar -czvf fish_functions.tar.gz ~/.config/fish/functions`
+
+puts "\n"
+puts "done"
