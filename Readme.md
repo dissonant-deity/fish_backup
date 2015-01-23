@@ -1,6 +1,6 @@
 ### Sections
 
-1. [functions](topics/fish_shell/functions/functions.md]
+1. [functions](topics/fish_shell/functions/functions.md)
 
    fish functions markdown page generator
 
